@@ -4,10 +4,7 @@ import org.junit.jupiter.api.Test;
 import ru.netology.web.data.DataHelper;
 import ru.netology.web.page.LoginPage;
 
-import java.util.Random;
-
 import static com.codeborne.selenide.Selenide.open;
-import static org.apache.commons.lang3.RandomUtils.nextInt;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MoneyTransferTest {
@@ -53,4 +50,5 @@ public class MoneyTransferTest {
         assertEquals(balanceFirstCard + sum, balanceFirstCardAfterTransfer);
         assertEquals(balanceSecondCard - sum, balanceSecondCardAfterTransfer);
     }
+
 }
