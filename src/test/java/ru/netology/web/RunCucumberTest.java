@@ -8,7 +8,6 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
     plugin = {"pretty", "summary"},
     features = {"src/test/resources/features"},
-    glue = {"ru.netology.steps"})
-
+    glue = {"ru.netology.web.steps"})
 public class RunCucumberTest {
 }
